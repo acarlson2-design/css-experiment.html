@@ -1,5 +1,5 @@
 Padding is the space around the content. Borders surround the padding. Margins surround the border.
-What is the practical difference between width, min-width, and max-width? Width is the general width of something, max width is the maximum width to display, and min width is the min width to display. These vary depending on what type of device or screen size you are using, so the different widths help create the boundaries.
-Why might you choose an RGBA background color instead of using opacity on the whole element? RGBA background colors are able to be edited as a single content item, instead of a whole section or area being edited. 
-What did you observe when testing background-size: cover versus contain? Contain seems to repeat the image and cover uses the whole space tp display the image.
-What CSS adjustment made the biggest improvement in your design? Why? Personally, I like the outset border best in combination with the RGBA transparency of a feature section. It looks like frosted glass and it looks dimensional.
+ Width is the general width of something, max width is the maximum width to display, and min width is the min width to display. These vary depending on what type of device or screen size you are using, so the different widths help create the boundaries.
+RGBA background colors are able to be edited as a single content item, instead of a whole section or area being edited. 
+Contain seems to repeat the image and cover uses the whole space tp display the image.
+Personally, I like the outset border best in combination with the RGBA transparency of a feature section. It looks like frosted glass and it looks dimensional.
