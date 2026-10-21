@@ -60,7 +60,8 @@ footer { padding: 18px 24px; background: #7c0021; color: white; }
 /* Defines how wide the image should be */
 .image-wrapper {
   width: 150px;             /* Set your desired width for the images */
-  flex-shrink: 0;           /* Prevents the image from getting squeezed horizontally */
+  flex-shrink: 0; 
+     /* Prevents the image from getting squeezed horizontally */
 }
 
 /* Magic sauce to make the image fill the height without distorting */
@@ -69,7 +70,8 @@ footer { padding: 18px 24px; background: #7c0021; color: white; }
   height: 100%;
   object-fit: cover;        /* Crops the image cleanly to fit the dynamic height */
   display: block;
-  border-radius: 6px;       /* Optional: matches the box rounding */
+  border-radius: 6px;
+      /* Optional: matches the box rounding */
 }
 
 /* Right Side: The text box that dictates the height */
