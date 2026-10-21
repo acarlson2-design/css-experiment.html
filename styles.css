@@ -37,4 +37,57 @@ footer { padding: 18px 24px; background: #7c0021; color: white; }
 
    color: #7c0021; text-shadow: 2px 2px 2px rgba(241, 239, 239, 0.72);
  }
- 
+
+ /* Jesse: I used Google to explore some examples of html and css. You are not in class today so I used Google to practice for this section. */
+
+/* Stacks the rows vertically */
+.stacked-rows-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;                /* Space between each row */
+  width: 100%;
+}
+
+/* Handles the side-by-side layout for each pair */
+.layout-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;     /* FORCES the image wrapper to match the text box height */
+  gap: 20px; 
+  height: 200px;               /* Space between the image and the text box */
+}
+
+/* Defines how wide the image should be */
+.image-wrapper {
+  width: 150px;             /* Set your desired width for the images */
+  flex-shrink: 0;           /* Prevents the image from getting squeezed horizontally */
+}
+
+/* Magic sauce to make the image fill the height without distorting */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* Crops the image cleanly to fit the dynamic height */
+  display: block;
+  border-radius: 6px;       /* Optional: matches the box rounding */
+}
+
+/* Right Side: The text box that dictates the height */
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures text starts at the absolute top of the box */
+  flex: 1;                  /* Takes up all remaining width */
+  text-align: left;         /* Left-aligns the text */
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Fixes default browser spacing so text starts right at the top */
+.text-box > :first-child { margin-top: 0; }
+.text-box > :last-child { margin-bottom: 0; }
+
+
+
